@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Expense Sharing Application</title>
+    <link rel="stylesheet" href="style.css.css">
+</head>
+<body>
+    <h1>Expense Sharing Application</h1>
+    <div id="user-form">
+        <h2>Create User</h2>
+        <input type="text" id="name" placeholder="Name">
+        <input type="email" id="email" placeholder="Email">
+        <input type="text" id="mobile" placeholder="Mobile Number">
+        <button onclick="createUser()">Create User</button>
+    </div>
+    <div id="expense-form">
+        <h2>Add Expense</h2>
+        <input type="number" id="amount" placeholder="Amount">
+        <select id="method">
+            <option value="equal">Equal</option>
+            <option value="exact">Exact</option>
+            <option value="percentage">Percentage</option>
+        </select>
+        <input type="text" id="description" placeholder="Description">
+        <input type="text" id="username" placeholder="User Name">
+        <button onclick="addExpense()">Add Expense</button>
+    </div>
+    <div id="expenses-list">
+        <h2>All Expenses</h2>
+        <ul id="expenses"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
